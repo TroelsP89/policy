@@ -1,0 +1,123 @@
+{
+ "properties": {
+  "displayName": "IMPACT Defense-In-Depth Policy",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "category": "IMPACT",
+   "version": "1.0",
+   "createdBy": "ba9182fd-8378-4ea0-b8e4-363fc660e4d4",
+   "createdOn": "2022-05-18T19:50:25.6898332Z",
+   "updatedBy": "ba9182fd-8378-4ea0-b8e4-363fc660e4d4",
+   "updatedOn": "2022-05-18T19:58:34.2271092Z"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Secure transfer to storage accounts should be enabled unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/217f260c-55a7-4c10-8290-4161ddb94fba",
+    "parameters": {
+     "effect": {
+      "value": "Audit"
+     }
+    },
+    "groupNames": [
+     "Storage Accounts"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Storage account public access should be disallowed unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/217f260c-55a7-4c10-8290-4161ddb94fe5",
+    "parameters": {},
+    "groupNames": [
+     "Storage Accounts"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Azure Cosmos DB should disable public network access unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/3b842f11-56fe-419d-8ed8-cac6d95a8e72",
+    "parameters": {},
+    "groupNames": [
+     "CosmosDB"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Storage accounts should restrict network access using virtual network rules unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/48d78673-747a-42b1-8c76-b0a449c2f87d",
+    "parameters": {},
+    "groupNames": [
+     "Storage Accounts"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Latest TLS version should be used in your Web App unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/7547bff8-a38e-400b-b6c6-d9f7cc1fd140",
+    "parameters": {},
+    "groupNames": [
+     "App Service"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Public network access on Azure SQL Database should be disabled unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/77c38a4a-a1ce-4976-8021-1ec4765229e7",
+    "parameters": {},
+    "groupNames": [
+     "SQL"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "App Services should disable public network access unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/a70beace-d33e-41a7-abcc-7e91b04212a6",
+    "parameters": {},
+    "groupNames": [
+     "App Service"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "Storage accounts should restrict access from trusted Microsoft services unless tagged_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/e78e3546-c04f-4532-b0a7-baadffa48722",
+    "parameters": {},
+    "groupNames": [
+     "Storage Accounts"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "IMPACT SQL LTR POLICY ENFORCEMENT_1",
+    "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyDefinitions/f495ba37-7da0-453c-9c42-e5355bc00359",
+    "parameters": {},
+    "groupNames": [
+     "SQL"
+    ]
+   },
+   {
+    "policyDefinitionReferenceId": "An Azure Active Directory administrator should be provisioned for SQL servers_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1f314764-cb73-4fc9-b863-8eca98ac36e9",
+    "parameters": {},
+    "groupNames": [
+     "SQL"
+    ]
+   }
+  ],
+  "policyDefinitionGroups": [
+   {
+    "name": "SQL",
+    "category": "Protection"
+   },
+   {
+    "name": "Storage Accounts",
+    "category": "Protection"
+   },
+   {
+    "name": "CosmosDB",
+    "category": "Protection"
+   },
+   {
+    "name": "App Service",
+    "category": "Protection"
+   }
+  ]
+ },
+ "id": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policySetDefinitions/0221718c7a62436c9cb945fd",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "0221718c7a62436c9cb945fd"
+}

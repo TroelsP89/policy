@@ -1,0 +1,31 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "b722d111-8f3f-4c4a-bd0b-c64f17c6e740",
+  "tenantId": "671a20e3-be78-467d-8591-cc4c22259a1b",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "IMPACT Defense-In-Depth Policy",
+  "policyDefinitionId": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policySetDefinitions/0221718c7a62436c9cb945fd",
+  "scope": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Troels Pedersen",
+   "parameterScopes": {},
+   "createdBy": "ba9182fd-8378-4ea0-b8e4-363fc660e4d4",
+   "createdOn": "2022-05-18T19:59:32.7469825Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/3bfd311f-c77d-463f-adac-5f3f2c1fc98d/providers/Microsoft.Authorization/policyAssignments/85599f93c99d4a5388295a8f",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "85599f93c99d4a5388295a8f",
+ "location": "westeurope"
+}
